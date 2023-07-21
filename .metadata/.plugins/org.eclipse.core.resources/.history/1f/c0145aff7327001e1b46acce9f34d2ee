@@ -1,0 +1,5 @@
+package com.projetomajo.agenda.entities;
+
+public class Departamento {
+
+}

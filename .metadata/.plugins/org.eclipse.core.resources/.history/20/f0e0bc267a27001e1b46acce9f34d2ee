@@ -1,0 +1,5 @@
+package com.projetomajo.agenda.repositories;
+
+public class UsuarioRepository {
+
+}

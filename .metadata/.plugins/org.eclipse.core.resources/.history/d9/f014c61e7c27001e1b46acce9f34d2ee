@@ -1,0 +1,5 @@
+package com.projetomajo.agenda.controllers;
+
+public class AgendamentosController {
+
+}

@@ -1,0 +1,57 @@
+package com.projetomajo.agenda.entities;
+
+import java.sql.Date;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
+
+public class Agendamentos {
+
+	@Entity
+	@Table(name = "tb_agendamentos")
+	private Long id;
+	private Date data;
+	private String descAgendamento;
+	
+	@ManyToOne
+	@JoinColumn(name = "usuario_id")
+	private Usuario usuario;
+	
+	public Agendamentos () {
+		
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public Date getData() {
+		return data;
+	}
+
+	public void setData(Date data) {
+		this.data = data;
+	}
+
+	public String getDescAgendamento() {
+		return descAgendamento;
+	}
+
+	public void setDescAgendamento(String descAgendamento) {
+		this.descAgendamento = descAgendamento;
+	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+}
